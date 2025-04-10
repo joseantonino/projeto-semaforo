@@ -20,7 +20,7 @@ function yellow() {
 
   setTimeout(function () {
     clearInterval(apagar);
-    cor.style.backgroundColor = "rgb(48, 48, 30";
+    cor.style.backgroundColor = "rgb(48, 48, 30)";
     red();
   }, 5000);
 }
