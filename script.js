@@ -1,4 +1,15 @@
+function contagem(a) {
+  var valor = a;
+  setInterval(function () {
+    if (valor > 0) {
+      valor = valor - 1;
+      document.querySelector(".cont").innerHTML = valor;
+    }
+  }, 1000);
+}
+
 function red() {
+  contagem(10);
   var cor = document.getElementById("red");
   cor.style.backgroundColor = "red";
 
@@ -9,6 +20,7 @@ function red() {
 }
 
 function yellow() {
+  contagem(6);
   var cor = document.getElementById("yellow");
 
   var apagar = setInterval(function () {
@@ -26,6 +38,7 @@ function yellow() {
 }
 
 function green() {
+  contagem(10);
   var cor = document.getElementById("green");
   cor.style.backgroundColor = "rgb(64, 255, 0)";
 
